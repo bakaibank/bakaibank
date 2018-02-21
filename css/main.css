@@ -1066,6 +1066,18 @@ a {
 .single_main_banner_card {
 	margin-bottom: 70px;	
 }
+/*CUSTOM TEXT PAGE (WYSIWYG)*/
+.text_page {
+	color: #111;
+	padding: 70px 0;
+}
+.text_page p {
+	font-size: 16px;	
+	line-height: 1.4;	
+}
+.text_page a {
+	color: #1345ae;
+}
 /*FOOTER*/
 footer a {
 	color: #fff;
