@@ -207,6 +207,9 @@
 	.vacancy_item h4 {
 		min-height: auto!important;
 	}
+	.tender_item {
+		min-height: auto!important;
+	}
 }
 @media (min-width: 600px) {
 	.left_top_menu.left_top_menu_mob {

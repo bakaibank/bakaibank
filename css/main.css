@@ -714,6 +714,74 @@ a {
 .news_pagination li a:hover {
 	background: #ccc;
 }
+/*TENDERS*/
+.tenders_block {
+	padding: 70px 0;
+}
+.tenders_block h1 {
+	margin-bottom: 50px;	
+	color: #111;	
+}
+.tender_item {
+	display: block;
+	text-decoration: none!important;
+	min-height: 420px;
+	background: #f2f2f2;
+	padding: 30px;
+	margin-bottom: 30px;
+	position: relative;	
+}
+.tender_item:hover {
+	background: #0e3ea2;
+	-webkit-box-shadow: 0 15px 25px 0 rgba(0,0,0, .1);
+	box-shadow: 0 15px 25px 0 rgba(0,0,0, .1);
+}
+.tender_item:hover h4,
+.tender_item:hover h5 {
+	color: #fff;
+}
+.tender_item h4 {
+	margin-top: 0;	
+	color: #0e3ea2;
+	margin-bottom: 30px;	
+	line-height: 1.4;	
+}
+.tender_item h5 {
+	color: #888;
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+}
+.tenders_pagination {
+	margin-top: 30px;	
+}
+.tenders_pagination ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #f7f7f7;
+	display: inline-block;
+}
+.tenders_pagination li {
+	float: left;
+}
+.tenders_pagination li.active a:hover,
+.tenders_pagination li.active a {
+	background: #0e3ea2;
+	color: #fff;	
+}
+.tenders_pagination li span,
+.tenders_pagination li a {
+	display: block;
+	font-size: 14px;	
+	padding: 10px;
+	line-height: 1;	
+	color: #111;	
+	text-decoration: none;
+}
+.tenders_pagination li a:hover {
+	background: #ccc;
+}
 /*VACANCY*/
 .vacancies_block {
 	padding: 70px 0;
