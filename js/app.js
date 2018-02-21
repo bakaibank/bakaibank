@@ -53,4 +53,13 @@ $(function(){
 			$('body').removeClass('open_menu');
 		}
 	});
+
+	$('.single_card_wrap img').tilt({
+		maxTilt: 10,
+		speed: 900,
+		perspective: 1000,
+		glare: true,
+    maxGlare: .5,
+    scale: 1.1
+	});
 });
