@@ -211,6 +211,11 @@
 		min-height: auto!important;
 	}
 }
+@media only screen and (min-width: 641px) {
+	.credit_modal {
+		max-width: 980px;
+	}
+}
 @media (min-width: 600px) {
 	.left_top_menu.left_top_menu_mob {
 		display: none;

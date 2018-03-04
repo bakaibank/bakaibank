@@ -1050,6 +1050,235 @@ a {
 .single_product_tab_item.active {
 	display: block;
 }
+/*SINGLE CREDIT MODAL*/
+.credit_modal {
+  text-align: left;
+  padding: 30px 70px;
+}
+.credit_modal_close {
+  float: right;
+  cursor: pointer;
+  color: #7d7d7d;
+  font-size: 14px;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+.credit_modal_close:hover {
+  color: #111;
+}
+
+.credit_modal_title {
+  font-size: 30px;
+  margin: 50px 0;
+  color: #111;
+}
+
+.credit_modal_i_group {
+  margin-bottom: 30px;
+}
+
+.credit_modal_i_group label {
+    display: inline-block;
+    color: #7d7d7d;
+    font-size: 16px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.credit_modal_i_group input {
+    display: block;
+    line-height: 1;
+    border-radius: 0;
+    min-width: 300px;
+}
+
+#credit_currency {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    padding: 10px 15px;
+}
+
+#credit_modal_amount,
+#credit_percent,
+#credit_modal_month_p {
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #e7e7e7;
+    color: #111;
+    padding: 10px 15px;
+}
+
+#credit_modal_month_p {
+    width: 300px;
+    position: relative;
+}
+
+.credit_range {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.credit_range .slider-handle {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+}
+
+.credit_range .slider-handle:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #1345ae;
+    border-radius: 50%;
+}
+
+.credit_range .slider.slider-horizontal .slider-tick,
+.credit_range .slider.slider-horizontal .slider-handle {
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+.credit_range .slider.slider-horizontal {
+    width: 100% !important;
+    height: 4px !important;
+
+}
+
+.credit_range .slider.slider-horizontal .slider-track {
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: 4px;
+    border-radius: 0;
+}
+
+.credit_range .slider-selection {
+    background: #1345ae;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.credit_modal_result {
+    background: #f7f7f7;
+    padding: 30px;
+}
+
+.credit_modal_result_item {
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.credit_modal_result_item span {
+    font-size: 14px;
+    color: #7d7d7d;
+    line-height: 1;
+}
+
+.credit_modal_result_item h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.credit_modal_result_item.result_amount h3 {
+    color: #1345ae;
+}
+
+.credit_modal_result_item h4 {
+    margin-bottom: 0;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.credit_modal_btns button {
+    display: inline-block;
+    background: #1345ae;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.modal_credit_chart_link {
+    color: #1345ae;
+    font-size: 16px;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.modal_credit_chart_link:hover {
+    text-decoration: none;
+    color: #1345ae;
+}
+
+.credit_modal_chart_text {
+    padding: 30px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    color: #7d7d7d;
+    margin: 50px 0;
+}
+
+.credit_modal_chart_text p {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.credit_modal_chart {
+    overflow-x: scroll;
+}
+
+.credit_modal_chart h3 {
+    color: #7d7d7d;
+    margin-bottom: 40px;
+}
+
+.credit_modal_chart table {
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 40px;
+    min-width: 600px;
+    color: #111;
+}
+
+.credit_modal_chart table tr:first-child {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.credit_modal_chart table td {
+    padding: 15px;
+}
+
+.credit_modal_chart p {
+    font-size: 16px;
+    color: #7d7d7d;
+    line-height: 1.3;
+}
+
+.credit_modal_chart_wrapper {
+    display: none;
+}
+
+
 /*SINGLE CARDS*/
 .single_card_wrap {
 	padding-top: 120px;	
@@ -1077,6 +1306,87 @@ a {
 }
 .text_page a {
 	color: #1345ae;
+}
+
+
+/*MAPS*/
+.maps_block {
+	padding: 70px 0;
+}
+.maps_block h1 {
+	margin: 0;
+}
+.maps_nav {
+	background: #f7f7f7;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.maps_tab,
+.maps_switcher {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.maps_tab li,
+.maps_switcher li {
+	float: left;
+}
+.maps_tab li a,
+.maps_switcher li a {
+	display: block;
+	font-size: 16px;
+	color: #111;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+.maps_switcher li.active a {
+	background: #ddd;
+}
+.maps_tab li.active a {
+	background: #0e3ea2;
+	color: #fff;
+}
+.maps_tab {
+	float: left;
+}
+.maps_switcher {
+	float: right;
+}
+.maps_tab_item {
+	display: none;
+}
+.maps_tab_item.active {
+	display: block;
+}
+#map_filials,
+#map_atms {
+	height: 500px;
+}
+/*RULES*/
+.rules_list {
+	padding: 70px 0;
+	color: #111;
+}
+.rules_list h1 {
+	color: #111;
+	margin-top: 0;
+	margin-bottom: 70px;
+}
+.rule_item {
+	margin-bottom: 50px;	
+}
+.rule_item h4 {
+	font-weight: 900;
+	line-height: 1.4;
+	min-height: 65px;
+	color: #111;
+	font-size: 22px;	
+}
+.rule_item h5 {
+	color: #444;
+	min-height: 50px;
+	font-size: 16px;	
+	line-height: 1.3;	
 }
 /*FOOTER*/
 footer a {

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Бакай Банк</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -132,7 +135,7 @@
                 </div>
                 <div class="single_products_links"> 
                   <a href="#" class="single_order_link">Оставить заявку</a>
-                  <a href="#" class="single_credit_calculator_link">Кредитный калькулятор</a>
+                  <a href="#" class="single_credit_calculator_link" data-remodal-target="credit_modal">Кредитный калькулятор</a>
                 </div>
               </div>
             </div>
@@ -229,10 +232,131 @@
         </div>
       </div>  
     </footer>
+    <div class="remodal credit_modal" data-remodal-id="credit_modal">
+      <span data-remodal-action="close" class="credit_modal_close">Зыкрыть</span>
+      <h2 class="credit_modal_title"><strong>Кредитный калькулятор</strong></h2>
+      <div class="row">
+          <div class="col-md-7">
+            <div class="credit_modal_i_group">
+                <label for="credit_percent">Введите процент кредита</label>
+                <input type="text" placeholder="14%" id="credit_percent">
+            </div>
+            <div class="credit_modal_i_group">
+                <label for="credit_currency">Выберите валюту</label>
+                <select name="#" id="credit_currency">
+                    <option value="#">Кыргызский сом</option>
+                    <option value="#">Доллары</option>
+                    <option value="#">Евро</option>
+                </select>
+            </div>
+            <div class="credit_modal_i_group">
+                <label for="credit_modal_amount">Укажите желаемую сумму кредита</label>
+                <input id="credit_modal_amount" type="text" placeholder="50000">
+            </div>
+            <div class="credit_modal_i_group">
+                <label for="credit_modal_month">Укажите срок кредита</label>
+                <div id="credit_modal_month_p"><span id="credit_modal_month">0</span> мес.
+                    <div class="credit_range">
+                        <input type="text" placeholder="50000" id="credit_modal_month_range" data-slider-min="0" data-slider-max="60" data-slider-step="3" data-slider-value="0" data-slider-tooltip="hide">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="credit_modal_btns">
+                <button>Рассчитать</button>
+            </div>
+          </div>
+          <div class="col-md-5">
+              <div class="credit_modal_result">
+                    <div class="credit_modal_result_item result_amount">
+                        <span>Размер кредиты</span>
+                        <h3><strong>50000 сом</strong></h3>
+                    </div>
+                    <div class="credit_modal_result_item">
+                        <span>Процентная ставка</span>
+                        <h3><strong>20%</strong></h3>
+                    </div>
+                    <div class="credit_modal_result_item">
+                        <span>Ежемесячные платежи</span>
+                        <h4><strong>1234 сом</strong></h4>
+                    </div>
+                    <div class="credit_modal_result_item">
+                        <span>Общаяя сумма процентов</span>
+                        <h4><strong>1234 сом</strong></h4>
+                    </div>
+                    <div class="credit_modal_result_item">
+                        <span>Сумма выплат</span>
+                        <h4><strong>65 000 сом</strong></h4>
+                    </div>
+                    <a href="#modal_credit_chart" class="modal_credit_chart_link">График платежей по кредиту</a>
+              </div>
+          </div>
+      </div>
+      <div class="credit_modal_chart_wrapper" id="modal_credit_chart">
+        <div class="credit_modal_chart_text">
+          <p>Результат вычислений калькулятора имеет информативное значение. Точные параметры кредита будут рассчитаны Банком по результатам рассмотрения вашей заявки.</p>
+          <p>Для получения более подробной информации просим обратиться в ОАО «Бакай Банк».</p>
+        </div>
+        <div class="credit_modal_chart">
+          <h3>График платежей по кредиту</h3>
+          <table>
+            <tbody id="loan_table">
+              <tr>
+                <td><strong>Месяц</strong></td>
+                <td><strong>Баланс</strong></td>
+                <td><strong>Осн. сумма</strong></td>
+                <td><strong>Процент</strong></td>
+                <td><strong>Оплата</strong></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Периодичность и величина платежей по кредиту может отличаться от приведенных в соответствии с  условиями кредитного договора. Данный график платежей по кредиту не является публичной офертой и предназначен только для ознакомления.</p>
+        </div>
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
     
     <script src="js/app.js"></script>
+    <script>
+      $(function(){
+        $("#credit_modal_month_range").slider();
+            $("#credit_modal_month_range").on("slide", function (slideEvt) {
+                $("#credit_modal_month").text(slideEvt.value);
+            });
+            $('#credit_modal_amount').on('keydown', function (e) {
+                -1 !== $.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) || (/65|67|86|88/.test(e.keyCode) && (e.ctrlKey === true || e.metaKey === true)) && (!0 === e.ctrlKey || !0 === e.metaKey) || 35 <= e.keyCode && 40 >= e.keyCode || (e.shiftKey || 48 > e.keyCode || 57 < e.keyCode) && (96 > e.keyCode || 105 < e.keyCode) && e.preventDefault()
+            });
+            $('.modal_credit_chart_link').click(function () {
+                $('.credit_modal_chart_wrapper').slideDown(300);
+                return false;
+            });
+      });
+    </script>
   </body>
 </html>
