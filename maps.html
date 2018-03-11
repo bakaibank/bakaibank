@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Филиалы и банкоматы - Бакай Банк</title>
+    <title>Бакай Банк</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
@@ -20,26 +20,21 @@
     <nav class="top_nav">
       <div class="container">
         <div class="left_top_menu">
-          <a href="#" class="active">Частным лицам</a>
+          <a href="/bakai/front/" class="active">Частным лицам</a>
           <a href="#">Для бизнеса</a>
-          <a href="#">О банке</a>
+          <a href="/bakai/front/about.html">О банке</a>
         </div>
         <div class="left_top_menu left_top_menu_mob"> 
           <span class="top_nav_toggle">Частным лицам<span class="caret"></span></span>
         </div>
         <div class="right_top_menu">
           <a href="https://i.bakai.kg/" class="to_online" target="_blank">Интернет-банк</a>
-          <a href="#" class="search_link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-              <path style="fill-rule: evenodd;" d="M1382.75,28.573l-3.94-3.96a6.329,6.329,0,0,0,1.57-4.153,6.694,6.694,0,0,0-13.38,0,6.585,6.585,0,0,0,6.69,6.46,6.789,6.789,0,0,0,3.83-1.169l3.97,3.99a0.89,0.89,0,0,0,.63.259,0.9,0.9,0,0,0,.61-0.235A0.832,0.832,0,0,0,1382.75,28.573Zm-9.06-12.888a4.778,4.778,0,1,1-4.95,4.775A4.867,4.867,0,0,1,1373.69,15.685Z" transform="translate(-1367 -14)"/>
-            </svg>
-          </a>
         </div>
       </div>
       <div class="top_mob_nav"> 
-        <a href="#" class="active">Частным лицам</a>
+        <a href="/bakai/front/" class="active">Частным лицам</a>
         <a href="#">Для бизнеса</a>
-        <a href="#">О банке</a>
+        <a href="/bakai/front/about.html">О банке</a>
       </div>
     </nav>
     <div class="middle_nav">
@@ -76,8 +71,8 @@
             <li><a href="http://zurz.pro/bakai/front/cards.html">Платежные карты</a></li>
             <li><a href="#">Переводы</a></li>
             <li><a href="#">Открытие счета</a></li>
-            <li><a href="#">Операции</a></li>
-            <li><a href="http://zurz.pro/bakai/front/all_services.html">Другие услуги</a></li>
+            <li><a href="#">Экскроу-счет</a></li>
+            <li><a href="#">Другие услуги</a></li>
           </ul> 
           <div class="phone_list_mob"> 
             <a href="tel:0 (312) 61-00-61" class="contact_phone">0 (312) 61-00-61</a>
@@ -92,10 +87,17 @@
           <li><a href="http://zurz.pro/bakai/front/loans.html">Кредиты</a></li>
           <li><a href="http://zurz.pro/bakai/front/deposits.html">Депозиты</a></li>
           <li><a href="http://zurz.pro/bakai/front/cards.html">Платежные карты</a></li>
-          <li><a href="#">Переводы</a></li>
+          <li><a href="http://zurz.pro/bakai/front/transfers.html">Переводы</a></li>
           <li><a href="#">Открытие счета</a></li>
-          <li><a href="#">Операции</a></li>
-          <li><a href="http://zurz.pro/bakai/front/all_services.html">Другие услуги</a></li>
+          <li><a href="#">Экскроу-счет</a></li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown">Другие услуги</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Открытие и введение счета</a></li>
+              <li><a href="#">Операции с ценными бумагами</a></li>
+              <li><a href="#">Сейфовые ячейки</a></li>
+              <li><a href="#">Мерные слитки из золота, эмитируемые НБКР</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
@@ -196,7 +198,6 @@
         });
 
         // Create an array of alphabetical characters used to label the markers.
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
         // Add some markers to the map.
         // Note: The code uses the JavaScript Array.prototype.map() method to
@@ -215,31 +216,13 @@
             {imagePath: 'http://zurz.pro/bakai/front/img/icons/map_cluster.png'});
       }
       var locations = [
-        {lat: -31.563910, lng: 147.154312},
-        {lat: -33.718234, lng: 150.363181},
-        {lat: -33.727111, lng: 150.371124},
-        {lat: -33.848588, lng: 151.209834},
-        {lat: -33.851702, lng: 151.216968},
-        {lat: -34.671264, lng: 150.863657},
-        {lat: -35.304724, lng: 148.662905},
-        {lat: -36.817685, lng: 175.699196},
-        {lat: -36.828611, lng: 175.790222},
-        {lat: -37.750000, lng: 145.116667},
-        {lat: -37.759859, lng: 145.128708},
-        {lat: -37.765015, lng: 145.133858},
-        {lat: -37.770104, lng: 145.143299},
-        {lat: -37.773700, lng: 145.145187},
-        {lat: -37.774785, lng: 145.137978},
-        {lat: -37.819616, lng: 144.968119},
-        {lat: -38.330766, lng: 144.695692},
-        {lat: -39.927193, lng: 175.053218},
-        {lat: -41.330162, lng: 174.865694},
-        {lat: -42.734358, lng: 147.439506},
-        {lat: -42.734358, lng: 147.501315},
-        {lat: -42.735258, lng: 147.438000},
-        {lat: -43.999792, lng: 170.463352}
+        {lat: 41.1445673, lng: 74.9478911},
+        {lat: 41.1445673, lng: 74.9478911},
+        {lat: 41.2445673, lng: 74.2478911}
       ]
     </script>
+
+    
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
     <script async defer

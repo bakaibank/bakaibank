@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Бакай Банк</title>
+    <link rel="icon" href="img/favicon/fav_32x32.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/fav_60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/fav_76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/fav_120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/fav_152x152.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
@@ -20,26 +25,21 @@
     <nav class="top_nav">
       <div class="container">
         <div class="left_top_menu">
-          <a href="#" class="active">Частным лицам</a>
+          <a href="/bakai/front/" class="active">Частным лицам</a>
           <a href="#">Для бизнеса</a>
-          <a href="#">О банке</a>
+          <a href="/bakai/front/about.html">О банке</a>
         </div>
         <div class="left_top_menu left_top_menu_mob"> 
           <span class="top_nav_toggle">Частным лицам<span class="caret"></span></span>
         </div>
         <div class="right_top_menu">
           <a href="https://i.bakai.kg/" class="to_online" target="_blank">Интернет-банк</a>
-          <a href="#" class="search_link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-              <path style="fill-rule: evenodd;" d="M1382.75,28.573l-3.94-3.96a6.329,6.329,0,0,0,1.57-4.153,6.694,6.694,0,0,0-13.38,0,6.585,6.585,0,0,0,6.69,6.46,6.789,6.789,0,0,0,3.83-1.169l3.97,3.99a0.89,0.89,0,0,0,.63.259,0.9,0.9,0,0,0,.61-0.235A0.832,0.832,0,0,0,1382.75,28.573Zm-9.06-12.888a4.778,4.778,0,1,1-4.95,4.775A4.867,4.867,0,0,1,1373.69,15.685Z" transform="translate(-1367 -14)"/>
-            </svg>
-          </a>
         </div>
       </div>
       <div class="top_mob_nav"> 
-        <a href="#" class="active">Частным лицам</a>
+        <a href="/bakai/front/" class="active">Частным лицам</a>
         <a href="#">Для бизнеса</a>
-        <a href="#">О банке</a>
+        <a href="/bakai/front/about.html">О банке</a>
       </div>
     </nav>
     <div class="middle_nav">
@@ -76,8 +76,8 @@
             <li><a href="http://zurz.pro/bakai/front/cards.html">Платежные карты</a></li>
             <li><a href="#">Переводы</a></li>
             <li><a href="#">Открытие счета</a></li>
-            <li><a href="#">Операции</a></li>
-            <li><a href="http://zurz.pro/bakai/front/all_services.html">Другие услуги</a></li>
+            <li><a href="#">Экскроу-счет</a></li>
+            <li><a href="#">Другие услуги</a></li>
           </ul> 
           <div class="phone_list_mob"> 
             <a href="tel:0 (312) 61-00-61" class="contact_phone">0 (312) 61-00-61</a>
@@ -92,10 +92,17 @@
           <li><a href="http://zurz.pro/bakai/front/loans.html">Кредиты</a></li>
           <li><a href="http://zurz.pro/bakai/front/deposits.html">Депозиты</a></li>
           <li><a href="http://zurz.pro/bakai/front/cards.html">Платежные карты</a></li>
-          <li><a href="#">Переводы</a></li>
+          <li><a href="http://zurz.pro/bakai/front/transfers.html">Переводы</a></li>
           <li><a href="#">Открытие счета</a></li>
-          <li><a href="#">Операции</a></li>
-          <li><a href="http://zurz.pro/bakai/front/all_services.html">Другие услуги</a></li>
+          <li><a href="#">Экскроу-счет</a></li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown">Другие услуги</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Открытие и введение счета</a></li>
+              <li><a href="#">Операции с ценными бумагами</a></li>
+              <li><a href="#">Сейфовые ячейки</a></li>
+              <li><a href="#">Мерные слитки из золота, эмитируемые НБКР</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
@@ -106,7 +113,7 @@
             <h2>Выгодные кредитные ставки<br>до 29% годовых</h2>
             <h4>Лучшие потребительские кредиты по вашим запросам</h4>
           </hgroup>
-          <a href="#" class="banner_link">Узнать больше</a>
+          <a href="http://zurz.pro/bakai/front/single.html" class="banner_link">Узнать больше</a>
         </div>
       </div>
       <div class="banner_item" style="background-image: url('img/banner_2.jpg');">
@@ -115,7 +122,7 @@
             <h2>Лучшие вклады для детей<br>от 12% годовых</h2>
             <h4>Дайте возможность вашим детям быть обеспеченными в будущем</h4>
           </hgroup>
-          <a href="#" class="banner_link">Узнать больше</a>
+          <a href="http://zurz.pro/bakai/front/single.html" class="banner_link">Узнать больше</a>
         </div>
       </div>
       <div class="banner_item" style="background-image: url('img/banner_3.jpg');">
@@ -142,7 +149,7 @@
             </a>
           </div>
           <div class="col-md-3 col-sm-6 main_product_offset">
-            <a href="#" class="main_product_item">
+            <a href="http://zurz.pro/bakai/front/loans.html" class="main_product_item">
               <h4><strong>Кредиты</strong></h4>
               <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
                 <path style="fill: #111;fill-rule: evenodd;" d="M595.9,782.456H594.57V773.5a3.7,3.7,0,0,0-3.651-3.757h-1v-5.985A3.6,3.6,0,0,0,586.494,760h-0.223l-37.843,9.731c-0.011,0-.032.011-0.043,0.011A3.733,3.733,0,0,0,545,773.5v34.744A3.7,3.7,0,0,0,548.651,812h42.268a3.724,3.724,0,0,0,3.757-3.757v-9.19h1.22a1.042,1.042,0,0,0,1.1-1.1V783.57A1.111,1.111,0,0,0,595.9,782.456Zm-9.19-20.355a1.632,1.632,0,0,1,1.1,1.656v5.974H557.278Zm5.762,46.142a1.61,1.61,0,0,1-1.549,1.656H548.651a1.611,1.611,0,0,1-1.55-1.656V773.5a1.611,1.611,0,0,1,1.55-1.656H590.8a1.611,1.611,0,0,1,1.55,1.656v8.957H581.4a8.3,8.3,0,1,0,0,16.6h11.068v9.19Zm2.314-11.291H581.4a6.081,6.081,0,0,1,0-12.162h13.382v12.162Zm-14.6-5.975a1.1,1.1,0,0,0,1.1,1.1h1a1.1,1.1,0,0,0,0-2.208h-0.987A1.05,1.05,0,0,0,580.18,790.977Z" transform="translate(-545 -760)"/>
@@ -153,7 +160,7 @@
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#" class="main_product_item">
+            <a href="http://zurz.pro/bakai/front/deposits.html" class="main_product_item">
               <h4><strong>Депозиты</strong></h4>
               <svg xmlns="http://www.w3.org/2000/svg" width="61" height="52" viewBox="0 0 61 52">
                 <path style="fill: #111;fill-rule: evenodd;" d="M902.908,760H844.092A1.083,1.083,0,0,0,843,761.1v45.319a1.083,1.083,0,0,0,1.092,1.1h7.3V810.9a1.082,1.082,0,0,0,1.091,1.1h9.007a1.083,1.083,0,0,0,1.092-1.1v-3.375h21.834V810.9a1.083,1.083,0,0,0,1.092,1.1h9.006a1.083,1.083,0,0,0,1.092-1.1v-3.375h7.3a1.083,1.083,0,0,0,1.092-1.1V761.1A1.083,1.083,0,0,0,902.908,760ZM860.4,809.727h-6.823v-2.273H860.4v2.273Zm33.025,0H886.6v-2.273h6.824v2.273Zm1.091-4.408H845.184V762.2h56.564v43.115h-7.233Zm3.207-40.222H852.28a1.083,1.083,0,0,0-1.092,1.1v3.65h-1.706a1.083,1.083,0,0,0-1.092,1.1v8.058a1.083,1.083,0,0,0,1.092,1.1h1.706v7.232h-1.706a1.083,1.083,0,0,0-1.092,1.1V796.5a1.083,1.083,0,0,0,1.092,1.1h1.706v3.651a1.083,1.083,0,0,0,1.092,1.1h45.442a1.083,1.083,0,0,0,1.092-1.1V766.2A1.083,1.083,0,0,0,897.722,765.1Zm-47.148,12.81v-5.854h3.412v5.854h-3.412Zm0,17.494v-5.854h3.412V795.4h-3.412Zm46.057,4.753h-43.26v-2.549h1.706a1.083,1.083,0,0,0,1.092-1.1v-8.058a1.083,1.083,0,0,0-1.092-1.1h-1.706v-7.232h1.706a1.083,1.083,0,0,0,1.092-1.1v-8.058a1.083,1.083,0,0,0-1.092-1.1h-1.706V767.3h43.26v32.853h0Z" transform="translate(-843 -760)"/>
@@ -163,7 +170,7 @@
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#" class="main_product_item">
+            <a href="http://zurz.pro/bakai/front/transfers.html" class="main_product_item">
               <h4><strong>Денежные переводы</strong></h4>
               <svg xmlns="http://www.w3.org/2000/svg" width="52" height="49" viewBox="0 0 52 49">
                 <path style="fill: #111;fill-rule: evenodd;" class="cls-1" d="M1193.72,792.507c0,4.665-2.72,5-3.24,5h-39.94l8.59-8.814-2.29-2.366-11.37,11.663a1.7,1.7,0,0,0,0,2.349L1156.84,812l2.29-2.349-8.59-8.814h39.94c2.24,0,6.49-1.666,6.49-8.33v-5h-3.25v5Z" transform="translate(-1145 -763)"/>
@@ -175,7 +182,7 @@
         </div>
         <div class="main_product_carousel">
           <div class="carousel_item">
-            <a href="#" class="main_product_item">
+            <a href="http://zurz.pro/bakai/front/cards.html" class="main_product_item">
               <h4><strong>Карты</strong></h4>
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 80 50">
                 <path styte="fill: #111;fill-rule: evenodd;" class="cls-1" d="M319.812,762H259.644a5.2,5.2,0,0,0-5.188,5.167V770.5h-4.268A5.2,5.2,0,0,0,245,775.667v31.166A5.2,5.2,0,0,0,250.188,812h60.168a5.2,5.2,0,0,0,5.188-5.167V803.5h4.268A5.2,5.2,0,0,0,325,798.333V767.167A5.1,5.1,0,0,0,319.812,762Zm-72.134,13.667a2.512,2.512,0,0,1,2.51-2.5h60.084a2.511,2.511,0,0,1,2.51,2.5v3.5h-65.1v-3.5Zm65.188,26.583v4.667a2.512,2.512,0,0,1-2.51,2.5H250.188a2.512,2.512,0,0,1-2.51-2.5V789.583h65.188V802.25Zm0-15.333H247.678v-5.084h65.188v5.084Zm9.456,11.5a2.512,2.512,0,0,1-2.51,2.5h-4.268v-25.25a5.2,5.2,0,0,0-5.188-5.167H257.134v-3.333a2.512,2.512,0,0,1,2.51-2.5h60.168a2.512,2.512,0,0,1,2.51,2.5v31.25Z" transform="translate(-245 -762)"/>
