@@ -372,4 +372,10 @@
 	.product_item figure {
 		height: 210px!important;
 	}
+	.credit_modal {
+		padding: 30px 15px!important;
+	}
+	.credit_modal_i_group input {
+		min-width: 100%!important;
+	}
 }
