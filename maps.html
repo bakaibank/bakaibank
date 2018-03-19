@@ -122,6 +122,87 @@
             <div id="map_atms"></div>
           </div>
         </div>
+        <div id="map_list" class="map_list"> 
+          <div class="vacancies_tabs_wrap map_list_filter"> 
+            <ul class="vacancies_tabs">
+              <li class="active"><a href="#v_1" data-toggle="tab">Бишкек</a></li>
+              <li><a href="#v_2" data-toggle="tab">Чуй</a></li>
+              <li><a href="#v_3" data-toggle="tab">Ош</a></li>
+              <li><a href="#v_4" data-toggle="tab">Талас</a></li>
+              <li><a href="#v_5" data-toggle="tab">Баткен</a></li>
+              <li><a href="#v_6" data-toggle="tab">Жалал-Абад</a></li>
+              <li><a href="#v_7" data-toggle="tab">Нарын</a></li>
+              <li><a href="#v_8" data-toggle="tab">Иссык-Куль</a></li>
+            </ul>
+          </div>
+          <div class="vacancies_content"> 
+            <div class="vacancy_tab active" id="v_1">  
+              <div class="row"> 
+                <div class="col-md-6">  
+                  <div class="map_list_item"> 
+                    <h3><strong>Филиал ОАО "Бакай Банка"</strong></h3>
+                    <h4>г. Нарын, ул. Ленина 51. (центр города, напротив Филармонии)</h4>
+                    <h4>+996 (312) 65-98-78</h4>
+                    <h4>пн-пт: 10:00-20:00, сб: 10:00-17:00 (без перерыва), Вс - выходной</h4>
+                  </div>
+                </div>
+                <div class="col-md-6">  
+                  <div class="map_list_item"> 
+                    <h3><strong>Филиал ОАО "Бакай Банка"</strong></h3>
+                    <h4>г. Нарын, ул. Ленина 51. (центр города, напротив Филармонии)</h4>
+                    <h4>+996 (312) 65-98-78</h4>
+                    <h4>пн-пт: 10:00-20:00, сб: 10:00-17:00 (без перерыва), Вс - выходной</h4>
+                  </div>
+                </div>
+                <div class="col-md-6">  
+                  <div class="map_list_item"> 
+                    <h3><strong>Филиал ОАО "Бакай Банка"</strong></h3>
+                    <h4>г. Нарын, ул. Ленина 51. (центр города, напротив Филармонии)</h4>
+                    <h4>+996 (312) 65-98-78</h4>
+                    <h4>пн-пт: 10:00-20:00, сб: 10:00-17:00 (без перерыва), Вс - выходной</h4>
+                  </div>
+                </div>
+                <div class="col-md-6">  
+                  <div class="map_list_item"> 
+                    <h3><strong>Филиал ОАО "Бакай Банка"</strong></h3>
+                    <h4>г. Нарын, ул. Ленина 51. (центр города, напротив Филармонии)</h4>
+                    <h4>+996 (312) 65-98-78</h4>
+                    <h4>пн-пт: 10:00-20:00, сб: 10:00-17:00 (без перерыва), Вс - выходной</h4>
+                  </div>
+                </div>
+                <div class="col-md-6">  
+                  <div class="map_list_item"> 
+                    <h3><strong>Филиал ОАО "Бакай Банка"</strong></h3>
+                    <h4>г. Нарын, ул. Ленина 51. (центр города, напротив Филармонии)</h4>
+                    <h4>+996 (312) 65-98-78</h4>
+                    <h4>пн-пт: 10:00-20:00, сб: 10:00-17:00 (без перерыва), Вс - выходной</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vacancy_tab" id="v_2">
+              <h3 class="text-center"><strong>Нет информации</strong></h3>  
+            </div>
+            <div class="vacancy_tab" id="v_3">
+              <h3 class="text-center"><strong>Нет информации</strong></h3>  
+            </div>
+            <div class="vacancy_tab" id="v_4">
+              <h3 class="text-center"><strong>Нет информации</strong></h3>  
+            </div>
+            <div class="vacancy_tab" id="v_5">
+              <h3 class="text-center"><strong>Нет информации</strong></h3>  
+            </div>
+            <div class="vacancy_tab" id="v_6">
+              <h3 class="text-center"><strong>Нет информации</strong></h3>  
+            </div>
+            <div class="vacancy_tab" id="v_7">
+              <h3 class="text-center"><strong>Нет информации</strong></h3>  
+            </div>
+            <div class="vacancy_tab" id="v_8">
+              <h3 class="text-center"><strong>Нет информации</strong></h3>  
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="th_banner" style="background-image: url('img/banner_img.jpg');">
@@ -183,6 +264,7 @@
         </div>
       </div>  
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
 
       function initMap() {
@@ -194,41 +276,114 @@
           zoomControlOptions: {
               position: google.maps.ControlPosition.RIGHT_CENTER
           },
-          streetViewControl: false
+          streetViewControl: false,
+          styles: [{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]
         });
 
-        // Create an array of alphabetical characters used to label the markers.
 
-        // Add some markers to the map.
-        // Note: The code uses the JavaScript Array.prototype.map() method to
-        // create an array of markers based on a given "locations" array.
-        // The map() method here has nothing to do with the Google Maps API.
+        var infoWin = new google.maps.InfoWindow();
         var markers = locations.map(function(location, i) {
-          return new google.maps.Marker({
+          var marker = new google.maps.Marker({
             position: location,
-            icon: 'http://zurz.pro/bakai/front/img/icons/map_marker.png',
-            label: labels[i % labels.length]
+            icon: 'http://zurz.pro/bakai/front/img/map/map_marker.png'
           });
+          google.maps.event.addListener(marker, 'click', function(evt) {
+            infoWin.setContent(location.info);
+            infoWin.open(map, marker);
+          })
+          return marker;
         });
-
-        // Add a marker clusterer to manage the markers.
         var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'http://zurz.pro/bakai/front/img/icons/map_cluster.png'});
+            {imagePath: 'http://zurz.pro/bakai/front/img/map/map_cluster'});
       }
-      var locations = [
-        {lat: 41.1445673, lng: 74.9478911},
-        {lat: 41.1445673, lng: 74.9478911},
-        {lat: 41.2445673, lng: 74.2478911}
-      ]
+      var locations = [{
+          lat: 41.2445673, 
+          lng: 74.9478111, 
+          info: '<div class="map_info_content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h3 id="firstHeading" class="firstHeading">Главный офис банка</h3>'+
+          '<div id="bodyContent">'+
+              '<p>г.Бишкек, ул. Исанова 98</p>'+
+              '<p><strong>Телефон:</strong><br></p>' +
+              '<p>+996 (312) 65-45-12</p>' +
+              '<p><strong>Время работы:</strong><br></p>'+ 
+              '<p>Пн-Пт: 9.00-17.00, Сб-Вс - выходной<br></p>'+
+          '</div>'+
+          '</div>'
+        },{
+          lat: 41.1445673, 
+          lng: 74.9478911, 
+          info: '<div class="map_info_content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h3 id="firstHeading" class="firstHeading">Главный офис банка</h3>'+
+          '<div id="bodyContent">'+
+              '<p>г.Бишкек, ул. Исанова 98</p>'+
+              '<p><strong>Телефон:</strong><br></p>' +
+              '<p>+996 (312) 65-45-12</p>' +
+              '<p><strong>Время работы:</strong><br></p>'+ 
+              '<p>Пн-Пт: 9.00-17.00, Сб-Вс - выходной<br></p>'+
+          '</div>'+
+          '</div>'
+        }, {
+          lat: 41.2446773, 
+          lng: 74.2478211, 
+          info: '<div class="map_info_content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h3 id="firstHeading" class="firstHeading">Главный офис банка</h3>'+
+          '<div id="bodyContent">'+
+              '<p>г.Бишкек, ул. Исанова 98</p>'+
+              '<p><strong>Телефон:</strong><br></p>' +
+              '<p>+996 (312) 65-45-12</p>' +
+              '<p><strong>Время работы:</strong><br></p>'+ 
+              '<p>Пн-Пт: 9.00-17.00, Сб-Вс - выходной<br></p>'+
+          '</div>'+
+          '</div>'
+        },
+        {
+          lat: 41.2412573, 
+          lng: 74.9478211, 
+          info: '<div class="map_info_content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h3 id="firstHeading" class="firstHeading">Главный офис банка</h3>'+
+          '<div id="bodyContent">'+
+              '<p>г.Бишкек, ул. Исанова 98</p>'+
+              '<p><strong>Телефон:</strong><br></p>' +
+              '<p>+996 (312) 65-45-12</p>' +
+              '<p><strong>Время работы:</strong><br></p>'+ 
+              '<p>Пн-Пт: 9.00-17.00, Сб-Вс - выходной<br></p>'+
+          '</div>'+
+          '</div>'
+        },
+        {
+          lat: 41.3445673, 
+          lng: 74.3478911, 
+          info: '<div class="map_info_content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h3 id="firstHeading" class="firstHeading">Не главный офис банка</h3>'+
+          '<div id="bodyContent">'+
+              '<p>г.Бишкек, ул. Исанова 98</p>'+
+              '<p><strong>Телефон:</strong><br></p>' +
+              '<p>+996 (312) 65-45-12</p>' +
+              '<p><strong>Время работы:</strong><br></p>'+ 
+              '<p>Пн-Пт: 9.00-17.00, Сб-Вс - выходной<br></p>'+
+          '</div>'+
+          '</div>'
+        }
+      ];
     </script>
 
     
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    <script src="js/cluster.js">
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAidfQlCknAADyO_KdoGGFr4f5oJL3PcQU&callback=initMap">
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>

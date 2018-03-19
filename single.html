@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Бакай Банк</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -133,7 +136,7 @@
                   </div>
                 </div>
                 <div class="single_products_links"> 
-                  <a href="#" class="single_order_link">Оставить заявку</a>
+                  <a href="#" class="single_order_link" data-remodal-target="order_modal">Оставить заявку</a>
                   <a href="#" class="single_credit_calculator_link" data-remodal-target="credit_modal">Кредитный калькулятор</a>
                 </div>
               </div>
@@ -231,6 +234,69 @@
         </div>
       </div>  
     </footer>
+    <div class="remodal credit_modal" data-remodal-id="order_modal">
+      <span data-remodal-action="close" class="credit_modal_close">Зыкрыть</span>
+      <h2 class="credit_modal_title"><strong>Оставьте заявку</strong></h2>
+      <div class="text_custom_tabs_wrap">  
+        <ul class="text_custom_tabs">
+          <li class="active"><a href="#order_form_1" data-toggle="tab">Легкая форма</a></li>
+          <li><a href="#order_form_2" data-toggle="tab">Расширенная</a></li>
+        </ul>
+      </div>
+      <div class="text_custom_tab_content">
+        <div class="text_custom_item active" id="order_form_1">
+          <form action="#">
+            <div class="row"> 
+              <div class="col-md-6">  
+                <div class="credit_modal_i_group">  
+                  <label for="order_name">Ваше имя</label>
+                  <input type="text" id="order_name" placeholder="Введите имя" class="order_input">
+                </div>
+                <div class="credit_modal_i_group">  
+                  <label for="order_phone">Ваш номер телефона</label>
+                  <input type="text" id="order_phone" placeholder="Введите номер телефона" class="order_input">
+                </div>
+                <button class="order_send">Отправить данные</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="text_custom_item" id="order_form_2">
+          <form action="#">
+            <div class="row"> 
+              <div class="col-md-6">  
+                <div class="credit_modal_i_group">  
+                  <label for="order_name">Ваше имя</label>
+                  <input type="text" id="order_name" placeholder="Введите имя" class="order_input">
+                </div>
+                <div class="credit_modal_i_group">  
+                  <label for="order_name">Ваше фамилия</label>
+                  <input type="text" id="order_name" placeholder="Введите имя" class="order_input">
+                </div>
+                <div class="credit_modal_i_group">  
+                  <label for="order_phone">Ваш номер телефона</label>
+                  <input type="text" id="order_phone" placeholder="Введите номер телефона" class="order_input">
+                </div>
+                <button class="order_send">Отправить данные</button>
+              </div>
+              <div class="col-md-6">  
+                <div class="credit_modal_i_group">  
+                  <label for="order_name">Паспорт серии</label>
+                  <input type="text" id="order_name" placeholder="Введите номер паспорта" class="order_input">
+                </div>
+                <div class="credit_modal_i_group">  
+                  <label for="order_name">Кем выдан</label>
+                  <input type="text" id="order_name" placeholder="Орган выдавший документ" class="order_input">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>  
+      </div>
+      <div class="order_guarantee"> 
+        <h4 class="text-center"><strong>Мы гарантируем, что ваши данные не передаются третьим лицам</strong></h4>
+      </div>
+    </div>
     <div class="remodal credit_modal" data-remodal-id="credit_modal">
       <span data-remodal-action="close" class="credit_modal_close">Зыкрыть</span>
       <h2 class="credit_modal_title"><strong>Кредитный калькулятор</strong></h2>

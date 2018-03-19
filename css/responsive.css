@@ -108,6 +108,11 @@
 	body.open_menu {
 		overflow: hidden;
 	}
+	.menu_another {
+		margin: 0;
+		padding: 0 0 0 15px;
+		list-style: none;
+	}
 	.main_product_item {
 		margin-top: 0!important;
 	}
@@ -133,6 +138,12 @@
 	}
 	.vacancies_tabs li a {
 		font-size: 14px!important;	
+	}
+	.text_page {
+		overflow-x: scroll;
+	}
+	.text_custom_tabs_wrap {
+		overflow-x: scroll;
 	}
 }
 @media (min-width: 767px) {
@@ -322,6 +333,10 @@
 	}
 	.single_product_description {
 		overflow-x: scroll;
+	}
+	.custom_doc_item {
+		display: block!important;
+		margin-left: 0!important;
 	}
 }
 @media (max-width: 480px) {

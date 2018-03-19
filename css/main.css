@@ -3,7 +3,6 @@
 	font-weight: 100;	
 	font-style: normal;
 	src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),  
-  		 url('../fonts/Lato-Light.otf')  format('opentype'),
 	     url('../fonts/Lato-Light.woff') format('woff'), 
 	     url('../fonts/Lato-Light.ttf')  format('truetype'), 
 	     url('../fonts/Lato-Light.svg#Lato-Light') format('svg');
@@ -13,7 +12,6 @@
 	font-weight: 100;	
 	font-style: italic;
 	src: url('../fonts/Lato-LightItalic.eot?#iefix') format('embedded-opentype'),  
-  		 url('../fonts/Lato-LightItalic.otf')  format('opentype'),
 	     url('../fonts/Lato-LightItalic.woff') format('woff'), 
 	     url('../fonts/Lato-LightItalic.ttf')  format('truetype'), 
 	     url('../fonts/Lato-LightItalic.svg#Lato-LightItalic') format('svg');
@@ -23,7 +21,6 @@
 	font-weight: 300;	
 	font-style: normal;
 	src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),  
-  		 url('../fonts/Lato-Regular.otf')  format('opentype'),
 	     url('../fonts/Lato-Regular.woff') format('woff'), 
 	     url('../fonts/Lato-Regular.ttf')  format('truetype'), 
 	     url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
@@ -33,7 +30,6 @@
 	font-weight: 300;	
 	font-style: italic;
 	src: url('../fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),  
-  		 url('../fonts/Lato-Italic.otf')  format('opentype'),
 	     url('../fonts/Lato-Italic.woff') format('woff'), 
 	     url('../fonts/Lato-Italic.ttf')  format('truetype'), 
 	     url('../fonts/Lato-Italic.svg#Lato-Italic') format('svg');
@@ -43,7 +39,6 @@
 	font-weight: 700;	
 	font-style: normal;
 	src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),  
-  		 url('../fonts/Lato-Bold.otf')  format('opentype'),
 	     url('../fonts/Lato-Bold.woff') format('woff'), 
 	     url('../fonts/Lato-Bold.ttf')  format('truetype'), 
 	     url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg');
@@ -53,7 +48,6 @@
 	font-weight: 700;	
 	font-style: italic;
 	src: url('../fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),  
-  		 url('../fonts/Lato-BoldItalic.otf')  format('opentype'),
 	     url('../fonts/Lato-BoldItalic.woff') format('woff'), 
 	     url('../fonts/Lato-BoldItalic.ttf')  format('truetype'), 
 	     url('../fonts/Lato-BoldItalic.svg#Lato-BoldItalic') format('svg');
@@ -63,7 +57,6 @@
 	font-weight: 900;	
 	font-style: normal;
 	src: url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),  
-  		 url('../fonts/Lato-Black.otf')  format('opentype'),
 	     url('../fonts/Lato-Black.woff') format('woff'), 
 	     url('../fonts/Lato-Black.ttf')  format('truetype'), 
 	     url('../fonts/Lato-Black.svg#Lato-Black') format('svg');
@@ -73,7 +66,6 @@
 	font-weight: 900;	
 	font-style: italic;
 	src: url('../fonts/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),  
-  		 url('../fonts/Lato-BlackItalic.otf')  format('opentype'),
 	     url('../fonts/Lato-BlackItalic.woff') format('woff'), 
 	     url('../fonts/Lato-BlackItalic.ttf')  format('truetype'), 
 	     url('../fonts/Lato-BlackItalic.svg#Lato-BlackItalic') format('svg');
@@ -1336,7 +1328,11 @@ a {
 .credit_modal_chart_wrapper {
     display: none;
 }
+/*Projcts*/
 
+.project_item {
+	min-height: 240px;
+}
 
 /*SINGLE CARDS*/
 .single_card_wrap {
@@ -1366,8 +1362,82 @@ a {
 .text_page a {
 	color: #1345ae;
 }
-
-
+.text_page img {
+	max-width: 100%;
+}
+.text_page table {
+	width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+.text_page table>thead>tr>th, 
+.text_page table>tbody>tr>th, 
+.text_page table>tfoot>tr>th, 
+.text_page table>thead>tr>td, 
+.text_page table>tbody>tr>td, 
+.text_page table>tfoot>tr>td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+}
+.text_custom_tabs {
+	display: table;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #f7f7f7;
+}
+.text_custom_tabs li {
+	display: table-cell;
+	width: 1%;
+}
+.text_custom_tabs li a {
+	font-size: 16px;
+  color: #7d7d7d;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+}
+.text_custom_tabs li.active a {
+	color: #0e3ea2;
+  background: #eee;
+  font-weight: 700;
+}
+.text_custom_tab_content .text_custom_item{
+	display: none;
+	padding: 30px 0;
+}
+.text_custom_tab_content .text_custom_item.active {
+	display: block;
+}
+.custom_docs {
+	padding: 30px 0;
+}
+.custom_docs h3 {
+	margin-bottom: 30px;	
+	color: #0e3ea2;
+}
+.custom_doc_item {
+	padding: 20px 15px 20px 50px;
+	background: #f4f4f4 url('../img/icons/doc_icon.svg') no-repeat 15px 15px;
+	display: inline-block;
+	font-size: 14px;	
+	color: #111;	
+	margin-bottom: 15px;	
+}
+.custom_doc_item+.custom_doc_item {
+	margin-left: 15px;	
+}
+.custom_doc_item:hover {
+	background-color: #e4e4e4;
+	text-decoration: none;
+	-webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,.05);
+	box-shadow: 0 10px 15px 0 rgba(0,0,0,.05);
+}
 /*MAPS*/
 .maps_block {
 	padding: 70px 0;
@@ -1422,19 +1492,35 @@ a {
 	height: 500px;
 }
 .maps_tab_content, .place_adresses_content {
-    display: none;
+  display: none;
 }
-
 .maps_tab_content.active, .place_adresses_content.active {
-    display: block;
+  display: block;
 }
-
 #filials, #atm {
-    display: none;
+  display: none;
 }
-
 #filials.active, #atm.active {
-    display: block;
+  display: block;
+}
+.map_list_filter {
+	margin-top: 0!important;
+	margin-bottom: 40px!important;
+}
+.map_list_item {
+	margin-bottom: 30px;	
+	padding: 15px;
+	background: #eee;
+	min-height: 250px;
+	color: #111;	
+}
+.map_list_item h3 {
+	margin-top: 0;
+	margin-bottom: 30px;	
+	color: #0e3ea3;
+}
+.map_list_item h4 {
+	margin-bottom: 25px;	
 }
 /*RULES*/
 .rules_list {
@@ -1493,7 +1579,31 @@ a {
 	margin: 0;
 	color: #888;	
 }
-
+/*ORDER MODAL*/
+.order_input {
+	font-size: 18px;
+  border: 1px solid #e7e7e7;
+  color: #111;
+  padding: 10px 15px;
+}
+.order_input:focus {
+	border-color: #0e3ea3;
+}
+.order_send {
+	background: #0e3ea3;
+	font-size: 16px;	
+	color: #fff;
+	padding: 15px 25px;
+	border-radius: 4px;
+	border: none;
+}
+.order_guarantee {
+	padding: 30px 0;
+	color: #0e3ea3;
+}
+.order_guarantee h4 {
+	margin: 0;
+}
 /*404*/
 .error_page {
 	padding: 70px 0;
