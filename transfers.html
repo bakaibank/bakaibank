@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Бакай Банк</title>
+    <title>Денежные переводы - Бакай Банк</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -29,6 +31,7 @@
         </div>
         <div class="right_top_menu">
           <a href="https://i.bakai.kg/" class="to_online" target="_blank">Интернет-банк</a>
+          <a href="https://i.bakai.kg/" class="to_checkout" target="_blank">Интернет выписка</a>
         </div>
       </div>
       <div class="top_mob_nav"> 
@@ -70,9 +73,12 @@
             <li><a href="http://zurz.pro/bakai/front/deposits.html">Депозиты</a></li>
             <li><a href="http://zurz.pro/bakai/front/cards.html">Платежные карты</a></li>
             <li><a href="#">Переводы</a></li>
-            <li><a href="#">Открытие счета</a></li>
-            <li><a href="#">Экскроу-счет</a></li>
-            <li><a href="#">Другие услуги</a></li>
+            <li><a href="#">Драг.металлы</a></li>
+            <li><a href="#mob_menu_drop" data-toggle="collapse">Другие услуги</a></li>
+            <ul id="mob_menu_drop" class="collapse menu_another"> 
+              <li><a href="#">Откртие счета</a></li>
+              <li><a href="#">Аренда сейфов</a></li>
+            </ul>
           </ul> 
           <div class="phone_list_mob"> 
             <a href="tel:0 (312) 61-00-61" class="contact_phone">0 (312) 61-00-61</a>
@@ -101,61 +107,52 @@
         </ul>
       </div>
     </nav>
-    <section class="product_list">
+    <section class="transfers_list">
       <div class="container">
         <h1><strong>Денежные переводы без открытия счета</strong></h1>
-        <div class="product_item">
+        <div class="transfers_additional">
           <div class="row">
-            <div class="col-md-4">
-              <figure style="background-image: url('img/transfer_1.jpg')"></figure>
+            <div class="col-md-10">
+              <h3>Широкий выбор систем денежных переводов дает Вам возможность отправить денежные средства в любую точку мира. При этом вам нужно иметь при себе оригинал паспорта и знать ФИО получателя.</h3>
             </div>
-            <div class="col-md-8">
-              <h2>Бакай Трансфер</h2>
-              <div class="product_list_blocks clearfix">
-                <div class="product_list_block_item trans">
-                  <h3><strong>До 12%</strong></h3>
-                  <h5>национальная валюта: 0,1% от суммы перевода (мин. комиссия 30 сом)<br>иностранная валюта: 0,15% от суммы перевода (мин. комиссия 0,6$ США; 0,5 </h5>
-                </div>
-                <div class="product_list_block_item trans">
-                  <h3><strong>от 1000 сом</strong></h3>
-                  <h5>Легкое открытие</h5>
-                </div>
-                <div class="product_list_block_item trans">
-                  <h3><strong>Защищенность</strong></h3>
-                  <h5>Депозит застрахован</h5>
-                </div>
-              </div>
-              <!-- <div class="product_more">
-                            <a href="#" class="product_more_link">Подробнее</a>
-                          </div>
-                           -->            </div>
           </div>
         </div>
-        <div class="product_item">
-          <div class="row">
-            <div class="col-md-4">
-              <figure style="background-image: url('http://ofeed.ru/images/12/127-1.jpg')"></figure>
+        <div class="row"> 
+          <div class="col-md-3 col-sm-6">  
+            <div class="transfer_item" data-remodal-target="transfer_modal_1">
+              <figure class="transfer_item_img" style="background-image: url('img/transfer_1.jpg');"></figure>
+              <h4>Бакай Трансфер</h4>
             </div>
-            <div class="col-md-8">
-              <h2>Золотая корона</h2>
-              <div class="product_list_blocks clearfix">
-                <div class="product_list_block_item trans">
-                  <h3><strong>До 12%</strong></h3>
-                  <h5>национальная валюта: 0,1% от суммы перевода (мин. комиссия 30 сом)<br>иностранная валюта: 0,15% от суммы перевода (мин. комиссия 0,6$ США; 0,5 </h5>
-                </div>
-                <div class="product_list_block_item trans">
-                  <h3><strong>от 1000 сом</strong></h3>
-                  <h5>Легкое открытие</h5>
-                </div>
-                <div class="product_list_block_item trans">
-                  <h3><strong>Защищенность</strong></h3>
-                  <h5>Депозит застрахован</h5>
-                </div>
-              </div>
-              <!-- <div class="product_more">
-                            <a href="#" class="product_more_link">Подробнее</a>
-                          </div>
-                           -->            </div>
+            <div class="remodal transfer_modal" data-remodal-id="transfer_modal_1">
+              <span data-remodal-action="close" class="transfer_close">Закрыть</span>
+              <h2 class="transfer_modal_title"><strong>Бакай трансфер</strong></h2>
+              <p>Тут будет ckeditor (вузивг крч)</p>
+              <p><strong>Комиссия: </strong></p>                                                                    <p>Национальная валюта: 0,1% от суммы перевода (мин. комиссия 30 сом) иностранная валюта: 0,15% от суммы перевода (мин. комиссия 0,6$ США; 0,5 EURO, 100 KZT, 20 RUB).</p>
+              <p><strong>Валюта:</strong></p>  
+              <p>сом КР, рубли РФ, доллары США, Евро, казахский тенге</p>
+              <p><strong>Охват:</strong></p>  
+              <p>по Кыргызской Республике</p>
+              <h4><strong>Максимальный перевод: до 1 000 000 сом, до 700 000 рублей РФ, до 20 000$ США, до 15 000 евро, до 3 000 000 тенге.</strong></h4>
+              <a href="/contacts" class="transfer_contact">Посмотреть филиалы</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">  
+            <div class="transfer_item" data-remodal-target="transfer_modal_2">
+              <figure class="transfer_item_img" style="background-image: url('img/transfer_2.jpg');"></figure>
+              <h4>Золотая корона</h4>
+            </div>
+            <div class="remodal transfer_modal" data-remodal-id="transfer_modal_2">
+              <span data-remodal-action="close" class="transfer_close">Закрыть</span>
+              <h2 class="transfer_modal_title"><strong>Золотая корона</strong></h2>
+              <p>Тут будет ckeditor (вузивг крч)</p>
+              <p><strong>Комиссия: </strong></p>                                                                    <p>Национальная валюта: 0,1% от суммы перевода (мин. комиссия 30 сом) иностранная валюта: 0,15% от суммы перевода (мин. комиссия 0,6$ США; 0,5 EURO, 100 KZT, 20 RUB).</p>
+              <p><strong>Валюта:</strong></p>  
+              <p>сом КР, рубли РФ, доллары США, Евро, казахский тенге</p>
+              <p><strong>Охват:</strong></p>  
+              <p>по Кыргызской Республике</p>
+              <h4><strong>Максимальный перевод: до 1 000 000 сом, до 700 000 рублей РФ, до 20 000$ США, до 15 000 евро, до 3 000 000 тенге.</strong></h4>
+              <a href="/contacts" class="transfer_contact">Посмотреть филиалы</a>
+            </div>
           </div>
         </div>
       </div>
@@ -175,22 +172,20 @@
           <div class="row">
             <div class="col-md-2 col-sm-2">
               <div class="footer_item">
-                <a href="#">О банке</a>
-                <a href="#">Реквизиты</a>
-                <a href="#">Вакансии</a>
-                <a href="#">Новости</a>
+                <a href="/about">О банке</a>
+                <a href="/about/requisites/">Реквизиты</a>
+                <a href="/about/vacancies/">Вакансии</a>
+                <a href="/news">Новости</a>
               </div>
             </div>
             <div class="col-md-3 col-sm-3">
               <div class="footer_item">
-                <a href="#">Часто задаваемые вопросы</a>
-                <a href="#">Контакты</a>
-                <a href="#">Филиалы и АТМ</a>
+                <a href="/contacts">Филиалы и АТМ</a>
               </div>
             </div>
             <div class="col-md-3 col-sm-3">
               <div class="footer_item">
-                <a href="#">Интернет-банкинг</a>
+                <a href="https://i.bakai.kg/" target="_blank">Интернет-банкинг</a>
                 <a href="#">Мобильный банкинг</a>
               </div>
             </div>
@@ -221,6 +216,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
   </body>

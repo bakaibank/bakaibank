@@ -626,14 +626,37 @@ a {
 }
 .currency_text {
 	color: #111;
+	padding: 15px;
 }
 .currency_text p {
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.4;
 }
 .currency_text a {
 	color: #0e3ea2;
 	text-decoration: underline;
+}
+.au_block {
+	background: #fff;
+	color: #111;
+	padding: 30px;
+}
+.au_block p {
+	font-size: 14px;	
+	line-height: 1.4;	
+}
+.au_link {
+	display: inline-block;
+	background: #0e3ea2;
+	color: #fff;
+	padding: 12px 25px;
+	border-radius: 2px;
+	text-decoration: none!important;
+	font-size: 16px;	
+	margin-top: 15px;	
+}
+.au_link:hover {
+	color: #fff;
 }
 /*THROUGH BANNER*/
 .th_banner {
@@ -1636,6 +1659,83 @@ a {
 .error_caption a:hover {
 	-webkit-box-shadow: 0 10px 15px 0 rgba(14,62,163, .2);
 	box-shadow: 0 10px 15px 0 rgba(14,62,163, .2);
+}
+/*TRANSFERS*/
+.transfers_list {
+	padding: 70px 0;
+}
+.transfers_list h1 {
+	margin-top: 0;
+  margin-bottom: 45px;
+  color: #111;
+}
+.transfers_additional {
+	margin-bottom: 30px;
+	color: #111;
+}
+.transfer_item {
+	background: #f4f4f4;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+	transition: .3s ease;
+	margin-bottom: 30px;	
+	cursor: pointer;
+}
+.transfer_item:hover {
+	-webkit-box-shadow: 0 15px 25px 0 rgba(0,0,0, .15);
+	box-shadow: 0 15px 25px 0 rgba(0,0,0, .15);
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.transfer_item_img {
+	min-height: 180px;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.transfer_item h4 {
+	padding: 15px;
+	margin: 0;
+	color: #111;
+}
+.transfer_modal {
+	text-align: left;
+	color: #111;
+}
+.transfer_modal_title {
+	margin-bottom: 45px;	
+}
+.transfer_modal h3,
+.transfer_modal h4,
+.transfer_modal h5,
+.transfer_modal h6,
+.transfer_modal p {
+	line-height: 1.4;	
+}
+.transfer_close {
+	float: right;
+	cursor: pointer;
+	font-size: 14px;	
+	color: #888;	
+}
+.transfer_contact {
+	display: inline-block;
+	font-size: 16px;	
+	padding: 15px 25px;
+	background: #0e3ea2;
+	border-radius: 4px;
+	margin-top: 30px;	
+	color: #fff;	
+	text-decoration: none;
+}
+.transfer_contact:hover {
+	text-decoration: none;
+	color: #fff;	
+	-webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0, .25);
+	box-shadow: 0 10px 15px 0 rgba(0,0,0, .25);
 }
 /*FOOTER*/
 footer a {
