@@ -342,43 +342,91 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6">
-            <h3><strong>Посчитать</strong></h3>
-            <div class="currency_calculator">
-              <h4><strong>Хочу поменять</strong></h4>
-              <div class="currency_form">
-                <div class="currency_line clearfix">
-                  <div class="currency_input">
-                    <input type="text" placeholder="Введите сумму">
-                    <select>
-                      <option value="cur_1">USD</option>
-                      <option value="cur_2">EUR</option>
-                      <option value="cur_3">RUB</option>
-                      <option value="cur_4">KZT</option>
-                      <option value="cur_5">KGS</option>
-                    </select>
-                  </div>
-                  <span>на</span>
-                  <div class="currency_select">
-                    <select>
-                      <option value="cur_1">USD</option>
-                      <option value="cur_2">EUR</option>
-                      <option value="cur_3">RUB</option>
-                      <option value="cur_4">KZT</option>
-                      <option value="cur_5">KGS</option>
-                    </select>
-                  </div>
+            <h3><strong>Курсы валют</strong></h3>
+            <div class="b_currency">              
+              <ul class="tab_menu clearfix">
+                <li class="active"><a href="#met_1" data-toggle="tab">Мерные слитки</a></li>
+                <li><a href="#met_2" data-toggle="tab">ОМС</a></li>
+              </ul>
+              <div class="tab_content">
+                <div class="tab_item active" id="met_1">
+                  <table class="currency_table">
+                    <thead>
+                      <tr>
+                        <th>Золото,(гр)</th>
+                        <th>покупка</th>
+                        <th>продажа</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="currency_name">1.00</td>
+                        <td class="currency_buy">68.45</td>
+                        <td class="currency_sell">68.65</td>
+                      </tr>
+                      <tr>
+                        <td class="currency_name">2.00</td>
+                        <td class="currency_buy">82.35</td>
+                        <td class="currency_sell">82.65</td>
+                      </tr>
+                      <tr>
+                        <td class="currency_name">5.00</td>
+                        <td class="currency_buy">1.22</td>
+                        <td class="currency_sell">1.24</td>
+                      </tr>
+                      <tr>
+                        <td class="currency_name">10.00</td>
+                        <td class="currency_buy">0.24</td>
+                        <td class="currency_sell">0.26</td>
+                      </tr>
+                      <tr>
+                        <td class="currency_name">31.1035</td>
+                        <td class="currency_buy">0.24</td>
+                        <td class="currency_sell">0.26</td>
+                      </tr>
+                      <tr>
+                        <td class="currency_name">100.00</td>
+                        <td class="currency_buy">0.24</td>
+                        <td class="currency_sell">0.26</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <button>Обменять</button>
-              </div>
-              <h4><strong>Вы получите:</strong></h4>
-              <div class="currency_result">
-                <h2>316940<span>сом</span></h2>
+                <div class="tab_item" id="met_2">
+                  <table class="currency_table">
+                    <thead>
+                      <tr>
+                        <th>Вид металла</th>
+                        <th>покупка</th>
+                        <th>продажа</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="currency_name">Золото</td>
+                        <td class="currency_buy">68.65</td>
+                        <td class="currency_sell">68.85</td>
+                      </tr>
+                      <tr>
+                        <td class="currency_name">Серебро</td>
+                        <td class="currency_buy">82.55</td>
+                        <td class="currency_sell">82.95</td>
+                      </tr>
+                      <tr>
+                        <td class="currency_name">Платина</td>
+                        <td class="currency_buy">1.23</td>
+                        <td class="currency_sell">1.25</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-5 col-sm-12">
             <h3><strong>Драгоценные металлы</strong></h3>
             <div class="au_block">  
+              <img src="img/drag_img.jpg" alt="img" class="img-responsive" style="margin-bottom: 15px;">
               <p>ОАО «БАКАЙ БАНК» осуществляет продажу и покупку золотых слитков, эмитируемых НБКР.</p>  
               <p>Вложение в драгоценные металлы является одним из средств сохранения сбережений. Золотые слитки обладают высокой ликвидностью и в случае роста мировых цен на драгоценные металлы, такое вложение может потенциально принести дополнительный доход.</p> 
               <p>ОАО «БАКАЙ БАНК» предлагает Вам воспользоваться услугами по покупке и продаже золотых слитков.</p>
