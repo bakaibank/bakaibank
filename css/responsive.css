@@ -221,6 +221,13 @@
 	.tender_item {
 		min-height: auto!important;
 	}
+	.search_input input {
+		margin-right: 15px!important;
+		width: 97%!important;
+	}
+	.search_button button {
+		margin-left: 0!important;
+	}
 }
 @media only screen and (min-width: 641px) {
 	.credit_modal {
@@ -341,6 +348,14 @@
 		display: block!important;
 		margin-left: 0!important;
 	}
+	.search_input input {
+		padding: 10px 15px!important;
+		font-size: 16px!important;
+	}
+	.search_button button {
+		padding: 10px 15px!important;
+		font-size: 16px!important;
+	}
 }
 @media (max-width: 480px) {
 	.left_top_menu.left_top_menu_mob > span {
@@ -395,5 +410,9 @@
 	}
 	.credit_modal_i_group input {
 		min-width: 100%!important;
+	}
+	.search_button button {
+		text-indent: -9999em;
+		background: #0e3ea2 url('../img/icons/search_w_icon.svg') 50% no-repeat!important;
 	}
 }
