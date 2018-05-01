@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/C79E8C34-FB05-6144-9764-293F7AC1FBD5/main.js" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/C79E8C34-FB05-6144-9764-293F7AC1FBD5/main.js" charset="UTF-8"></script></head>
   <body>
     <nav class="top_nav">
       <div class="container">
@@ -139,7 +139,7 @@
                   </div>
                 </div>
                 <div class="single_products_links"> 
-                  <a href="#" class="single_order_link" data-remodal-target="order_modal">Оставить заявку</a>
+                  <a href="#" class="single_order_link" data-remodal-target="order_modal">Заказать карту</a>
                 </div>
               </div>
             </div>
@@ -228,61 +228,170 @@
         </div>
       </div>  
     </footer>
-    <div class="remodal credit_modal" data-remodal-id="order_modal">
-      <span data-remodal-action="close" class="credit_modal_close">Зыкрыть</span>
+    <div class="remodal credit_modal order_modal" data-remodal-id="order_modal">
+      <span data-remodal-action="close" class="credit_modal_close">Закрыть</span>
       <h2 class="credit_modal_title"><strong>Оставьте заявку</strong></h2>
       <div class="text_custom_tabs_wrap">  
         <ul class="text_custom_tabs">
-          <li class="active"><a href="#order_form_1" data-toggle="tab">Легкая форма</a></li>
-          <li><a href="#order_form_2" data-toggle="tab">Расширенная</a></li>
+          <li class="active"><a href="#order_form_1" data-toggle="tab">Шаг 1</a></li>
+          <li><a href="#order_form_2" data-toggle="tab">Шаг 2</a></li>
+          <li><a href="#order_form_3" data-toggle="tab">Шаг 3</a></li>
         </ul>
       </div>
       <div class="text_custom_tab_content">
         <div class="text_custom_item active" id="order_form_1">
           <form action="#">
-            <div class="row"> 
-              <div class="col-md-6">  
-                <div class="credit_modal_i_group">  
-                  <label for="order_name">Ваше имя</label>
-                  <input type="text" id="order_name" placeholder="Введите имя" class="order_input">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="currency_choise">Выберите валюту</label>
+                  <select id="currency_choise">
+                    <option value="1">Сом</option>
+                    <option value="1">Доллар</option>
+                  </select>
                 </div>
-                <div class="credit_modal_i_group">  
-                  <label for="order_phone">Ваш номер телефона</label>
-                  <input type="text" id="order_phone" placeholder="Введите номер телефона" class="order_input">
-                </div>
-                <button class="order_send">Отправить данные</button>
               </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_surname">Фамилия</label>
+                  <input type="text" id="order_form_surname" placeholder="Введите фамилию" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_name">Имя</label>
+                  <input type="text" id="order_form_name" placeholder="Введите имя" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_lastname">Отчество</label>
+                  <input type="text" id="order_form_lastname" placeholder="Введите отчество" class="order_input">
+                </div>
+              </div>
+            </div>
+            <div class="row"> 
+              <div class="col-md-4">  
+                <div class="order_modal_forms">  
+                  <label for="order_form_latname">Имя и фамилия на латинице</label>
+                  <input type="text" id="order_form_latname" placeholder="ADILET MAKSATOV" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_phone">Контактный телефон</label>
+                  <input type="text" id="order_form_phone" placeholder="Введите номер телефона" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_email">Электронная почта</label>
+                  <input type="text" id="order_form_email" placeholder="mail@mail.com" class="order_input">
+                </div>
+              </div>
+            </div>
+            <div class="clearfix">
+              <span class="form_next_button">Следующий</span>
             </div>
           </form>
         </div>
         <div class="text_custom_item" id="order_form_2">
+          <h3><strong>Паспортные данные</strong></h3>
           <form action="#">
             <div class="row"> 
-              <div class="col-md-6">  
-                <div class="credit_modal_i_group">  
-                  <label for="order_name">Ваше имя</label>
-                  <input type="text" id="order_name" placeholder="Введите имя" class="order_input">
-                </div>
-                <div class="credit_modal_i_group">  
-                  <label for="order_name">Ваше фамилия</label>
-                  <input type="text" id="order_name" placeholder="Введите имя" class="order_input">
-                </div>
-                <div class="credit_modal_i_group">  
-                  <label for="order_phone">Ваш номер телефона</label>
-                  <input type="text" id="order_phone" placeholder="Введите номер телефона" class="order_input">
-                </div>
-                <button class="order_send">Отправить данные</button>
-              </div>
-              <div class="col-md-6">  
-                <div class="credit_modal_i_group">  
-                  <label for="order_name">Паспорт серии</label>
-                  <input type="text" id="order_name" placeholder="Введите номер паспорта" class="order_input">
-                </div>
-                <div class="credit_modal_i_group">  
-                  <label for="order_name">Кем выдан</label>
-                  <input type="text" id="order_name" placeholder="Орган выдавший документ" class="order_input">
+              <div class="col-md-4">  
+                <div class="order_modal_forms">  
+                  <label for="order_form_reg_address">Адрес прописки</label>
+                  <input type="text" id="order_form_reg_address" placeholder="Город/Село/Дом/Кв" class="order_input">
                 </div>
               </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_date_birth">Дата рождения</label>
+                  <input type="text" id="order_form_date_birth" placeholder="Введите дату" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_resident">Гражданство</label>
+                  <input type="text" id="order_form_resident" placeholder="Введите гражданство" class="order_input">
+                </div>
+              </div>
+            </div>
+            <div class="row"> 
+              <div class="col-md-4">  
+                <div class="order_modal_forms">  
+                  <label for="order_form_inn">ИНН</label>
+                  <input type="text" id="order_form_inn" placeholder="Введите ИНН" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_pass_serial">Серия</label>
+                  <input type="text" id="order_form_pass_serial" placeholder="AN*******" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_get_org">Кем выдан</label>
+                  <input type="text" id="order_form_get_org" placeholder="Введите организацию" class="order_input">
+                </div>
+              </div>
+            </div>
+            <div class="clearfix">
+              <span class="form_prev_button">Назад</span>
+              <span class="form_next_button">Следующий</span>
+            </div>
+          </form>
+        </div>  
+        <div class="text_custom_item" id="order_form_3">
+          <h3><strong>Контактные данные (для получения карты)</strong></h3>
+          <form action="#">
+            <div class="row"> 
+              <div class="col-md-4">  
+                <div class="order_modal_forms">  
+                  <label for="order_form_region">Область</label>
+                  <input type="text" id="order_form_region" placeholder="Введите область" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_city">Город/Район/Населенный пункт</label>
+                  <input type="text" id="order_form_city" placeholder="Введите данные" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_street">Улица</label>
+                  <input type="text" id="order_form_street" placeholder="Введите улицу" class="order_input">
+                </div>
+              </div>
+            </div>
+            <div class="row"> 
+              <div class="col-md-4">  
+                <div class="order_modal_forms">  
+                  <label for="order_form_house">Дом/Корпус</label>
+                  <input type="text" id="order_form_house" placeholder="Введите область" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_flat">Квартира</label>
+                  <input type="text" id="order_form_flat" placeholder="Введите данные" class="order_input">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="order_modal_forms">  
+                  <label for="order_form_zip">Почтовый индекс</label>
+                  <input type="text" id="order_form_zip" placeholder="Введите индекс" class="order_input">
+                </div>
+              </div>
+            </div>
+            <div class="clearfix">
+              <span class="form_prev_button">Назад</span>
+              <button class="order_send">Заказать</button>
             </div>
           </form>
         </div>  
@@ -291,6 +400,7 @@
         <h4 class="text-center"><strong>Мы гарантируем, что ваши данные не передаются третьим лицам</strong></h4>
       </div>
     </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tilt.jquery.min.js"></script>
@@ -298,5 +408,44 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     
     <script src="js/app.js"></script>
+    <script>
+      $(function(){
+       /*$('.btn-circle').on('click',function(){
+         $('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
+         $(this).addClass('btn-info').removeClass('btn-default').blur();
+       });*/
+
+       $('.form_prev_button, .form_next_button').on('click', function (e){
+         var $activeTab = $('.text_custom_item.active');
+
+         $('.text_custom_tabs a').toggleClass('active');
+
+         if ( $(e.target).hasClass('form_next_button') )
+         {
+            var form_next_button = $activeTab.next('.text_custom_item').attr('id');
+            $('[href="#'+ form_next_button +'"]').toggleClass('btn-default');
+            $('[href="#'+ form_next_button +'"]').tab('show');
+         }
+         else
+         {
+            var form_prev_button = $activeTab.prev('.text_custom_item').attr('id');
+            $('[href="#'+ form_prev_button +'"]').toggleClass('btn-default');
+            $('[href="#'+ form_prev_button +'"]').tab('show');
+         }
+       });
+        /*$('.form_next_button').click(function(){
+
+          var nextId = $(this).parents('.text_custom_item').next().attr("id");
+          $('[href=#'+nextId+']').tab('show');
+
+        });
+        $('.form_prev_button').click(function(){
+
+          var nextId2 = $(this).parents('.text_custom_item').prev().attr("id");
+          $('[href=#'+nextId2+']').tab('show');
+
+        });*/
+      });
+    </script>
   </body>
 </html>

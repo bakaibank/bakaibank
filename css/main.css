@@ -1151,7 +1151,7 @@ a {
 .credit_modal_i_group {
   margin-bottom: 30px;
 }
-
+.order_modal_forms label,
 .credit_modal_i_group label {
     display: inline-block;
     color: #7d7d7d;
@@ -1159,14 +1159,21 @@ a {
     padding: 15px 0;
     cursor: pointer;
 }
-
 .credit_modal_i_group input {
     display: block;
     line-height: 1;
     border-radius: 0;
     min-width: 300px;
 }
-
+.order_modal_forms select,
+.order_modal_forms input{
+    display: block;
+    line-height: 1;
+    border-radius: 0;
+    width:100%;
+    min-width:auto;
+    margin-bottom: 30px;
+}
 #credit_currency {
     display: block;
     font-size: 18px;
@@ -1175,12 +1182,12 @@ a {
     padding: 10px 15px;
 }
 select {
-	display: block;
-  font-size: 18px;
-  font-weight: 700;
-  border: 1px solid #e7e7e7;
-  padding: 10px 15px;
-  min-width: 300px;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #e7e7e7;
+    padding: 10px 15px;
+    min-width: 300px;
 }
 #credit_modal_amount,
 #credit_percent,
@@ -1379,6 +1386,29 @@ select {
 }
 .single_main_banner_card {
 	margin-bottom: 70px;	
+}
+.order_modal .order_send {
+  float:right;
+}
+.form_prev_button,
+.form_next_button {
+  display:inline-block;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 4px;
+  border: none;
+  cursor:pointer;
+  margin-bottom: 30px;
+}
+.form_prev_button {
+  float:left;
+  background: #eee;
+  color: #111;
+}
+.form_next_button {
+  float:right;
+  background: #0e3ea3;
 }
 /*CUSTOM TEXT PAGE (WYSIWYG)*/
 .text_page {
