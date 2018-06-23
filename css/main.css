@@ -1124,6 +1124,83 @@ a {
 .single_product_tab_item.active {
 	display: block;
 }
+/*BREADCRUMBS COMPONENT*/
+.page_breadcrumbs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-bottom: 5px;
+}
+.page_breadcrumbs li {
+	float: left;
+}
+.page_breadcrumbs li+li {
+	padding-left: 5px;
+}
+.page_breadcrumbs li+li:before {
+	content: '-';
+	padding-right: 5px;
+}
+.page_breadcrumbs li a{
+	font-size: 12px;
+	color: #999;
+	text-decoration: underline;
+}
+/*LOAN CATEGORY*/
+
+.loan_category_item {
+	min-height: 420px;
+	position: relative;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	z-index: 1;
+	margin-bottom: 30px;
+}
+.loan_category_item:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.3);
+	z-index: -1;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+	transition: .3s ease;
+}
+.loan_category_item:hover:before {
+	background: rgba(0,0,0,.6);
+}
+.loan_category_item a {
+	display: block;
+	text-decoration: none;
+	position: relative;
+	color: #fff;
+	padding: 110px 30px 30px 30px;
+	min-height: inherit;
+}
+.loan_category_item_title {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	margin: 0;
+}
+.loan_category_ben_group+.loan_category_ben_group {
+	display: block;
+	margin-top: 25px;
+	color: #fff;
+}
+.loan_category_ben_group_label {
+	font-weight: 100;
+}
+.loan_category_link {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+}
 /*SINGLE CREDIT MODAL*/
 .credit_modal {
   text-align: left;
@@ -1212,16 +1289,16 @@ select {
 }
 
 .credit_range .slider-handle {
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #e7e7e7;
     background: #fff;
 }
 
 .credit_range .slider-handle:before {
     content: '';
-    width: 6px;
-    height: 6px;
+    width: 12px;
+    height: 12px;
     position: absolute;
     top: 0;
     left: 0;
@@ -1234,8 +1311,8 @@ select {
 
 .credit_range .slider.slider-horizontal .slider-tick,
 .credit_range .slider.slider-horizontal .slider-handle {
-    margin-left: -8px;
-    margin-top: -8px;
+    margin-left: -11px;
+    margin-top: -11px;
 }
 
 .credit_range .slider.slider-horizontal {
@@ -1289,8 +1366,8 @@ select {
 
 .credit_modal_result_item h4 {
     margin-bottom: 0;
-    line-height: 1;
-    margin-top: 10px;
+    line-height: 1.4;
+    margin-top: 15px;
 }
 
 .credit_modal_btns button {
@@ -1301,19 +1378,22 @@ select {
     text-transform: uppercase;
     padding: 15px 40px;
     border: none;
-    margin-bottom: 30px;
 }
 
 .modal_credit_chart_link {
-    color: #1345ae;
-    font-size: 16px;
+    color: #111;
+    background: #e8e8e8;
+    font-size: 14px;
+    text-transform: uppercase;
     text-decoration: underline;
     display: inline-block;
     margin-top: 20px;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin-left: 15px;
 }
 
 .modal_credit_chart_link:hover {
-    text-decoration: none;
     color: #1345ae;
 }
 

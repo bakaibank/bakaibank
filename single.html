@@ -301,7 +301,15 @@
       <span data-remodal-action="close" class="credit_modal_close">Зыкрыть</span>
       <h2 class="credit_modal_title"><strong>Кредитный калькулятор</strong></h2>
       <div class="row">
-          <div class="col-md-7">
+          <div class="col-md-6">
+            <div class="credit_modal_i_group">
+                <label for="credit_currency">Выберите валюту</label>
+                <select name="#" id="credit_currency">
+                    <option value="#">Кыргызский сом</option>
+                    <option value="#">Доллары</option>
+                    <option value="#">Евро</option>
+                </select>
+            </div>
             <div class="credit_modal_i_group">
                 <label for="credit_percent">Введите процент кредита</label>
                 <input type="text" placeholder="14%" id="credit_percent">
@@ -321,46 +329,28 @@
             </div>
             <div class="credit_modal_i_group">
                 <label for="credit_date">Укажите срок</label>
-                <select name="#" id="credit_date">
-                    <option value="#">3 мес.</option>
-                    <option value="#">6 мес.</option>
-                    <option value="#">9 мес.</option>
-                    <option value="#">1 год</option>
-                    <option value="#">2 года</option>
-                    <option value="#">3 года</option>
-                    <option value="#">4 года</option>
-                    <option value="#">5 лет</option>
-                    <option value="#">10 лет</option>
-                </select>
+                <div id="credit_modal_month_p"><span id="credit_modal_month">0</span> мес.
+                  <div class="credit_range">
+                    <input type="text" placeholder="50000" id="credit_modal_month_range" data-slider-min="0" data-slider-max="180" data-slider-step="1" data-slider-value="0" data-slider-tooltip="hide">
+                  </div>
+               </div>
             </div>
             <div class="credit_modal_btns">
-                <button>Рассчитать</button>
+              <button>Рассчитать</button>
+              <a href="#modal_credit_chart" class="modal_credit_chart_link">График платежей</a>
             </div>
           </div>
-          <div class="col-md-5">
-              <div class="credit_modal_result">
-                    <div class="credit_modal_result_item result_amount">
-                        <span>Размер кредиты</span>
-                        <h3><strong>50000 сом</strong></h3>
-                    </div>
-                    <div class="credit_modal_result_item">
-                        <span>Процентная ставка</span>
-                        <h3><strong>20%</strong></h3>
-                    </div>
-                    <div class="credit_modal_result_item">
-                        <span>Ежемесячные платежи</span>
-                        <h4><strong>1234 сом</strong></h4>
-                    </div>
-                    <div class="credit_modal_result_item">
-                        <span>Общаяя сумма процентов</span>
-                        <h4><strong>1234 сом</strong></h4>
-                    </div>
-                    <div class="credit_modal_result_item">
-                        <span>Сумма выплат</span>
-                        <h4><strong>65 000 сом</strong></h4>
-                    </div>
-                    <a href="#modal_credit_chart" class="modal_credit_chart_link">График платежей по кредиту</a>
+          <div class="col-md-6">
+            <div class="credit_modal_result">
+              <div class="credit_modal_result_item">
+                <span>Тарификация</span>
+                <h4><strong>3 000-7.5 млн. - сом(20%-27%)</strong></h4>
+                <h4><strong>50-80 тыс. - евро(12%-18%)</strong></h4>
+                <h4><strong>50-100 тыс.- доллар(13%-18%)</strong></h4>
+                <h4><strong>3 000-7.5 млн. - рубль(13%-18%)</strong></h4>
+                <h4><strong>15 тыс.-37 350 млн. - тенге(16%-22%)</strong></h4>
               </div>
+            </div>
           </div>
       </div>
       <div class="credit_modal_chart_wrapper" id="modal_credit_chart">
@@ -374,10 +364,10 @@
             <tbody id="loan_table">
               <tr>
                 <td><strong>Месяц</strong></td>
-                <td><strong>Баланс</strong></td>
-                <td><strong>Осн. сумма</strong></td>
-                <td><strong>Процент</strong></td>
-                <td><strong>Оплата</strong></td>
+                <td><strong>Остаток</strong></td>
+                <td><strong>Погашение</strong></td>
+                <td><strong>Погашение %</strong></td>
+                <td><strong>Выплаты</strong></td>
               </tr>
               <tr>
                 <td>1</td>
@@ -399,6 +389,13 @@
                 <td>3</td>
                 <td>4</td>
                 <td>5</td>
+              </tr>
+              <tr class="loan_chart_result">
+                <td><strong>1</strong></td>
+                <td><strong>2</strong></td>
+                <td><strong>3</strong></td>
+                <td><strong>4</strong></td>
+                <td><strong>5</strong></td>
               </tr>
             </tbody>
           </table>

@@ -360,6 +360,9 @@
 		padding: 10px 15px!important;
 		font-size: 16px!important;
 	}
+	.modal_credit_chart_link {
+		margin-left: 0!important;
+	}
 }
 @media (max-width: 480px) {
 	.left_top_menu.left_top_menu_mob > span {
@@ -412,11 +415,39 @@
 	.credit_modal {
 		padding: 30px 15px!important;
 	}
+	.credit_modal_i_group select,
 	.credit_modal_i_group input {
 		min-width: 100%!important;
+	}
+	#credit_modal_month_p {
+		width: 100%!important;
 	}
 	.search_button button {
 		text-indent: -9999em;
 		background: #0e3ea2 url('../img/icons/search_w_icon.svg') 50% no-repeat!important;
+	}
+	.loan_category_item {
+		min-height: 360px!important;
+	}
+	.loan_category_item a {
+		padding: 70px 30px 30px 30px!important;
+	}
+	.loan_category_item_title {
+		font-size: 18px!important;
+	}
+	.loan_category_ben_group+.loan_category_ben_group {
+		margin-top: 15px;
+	}
+	.loan_category_ben_group_label,
+	.loan_category_ben_group_value {
+		font-size: 16px!important;
+		margin: 0;
+	}
+	.loan_category_ben_group_label {
+		margin-bottom: 10px;
+	}
+	.loan_category_link {
+		font-size: 12px!important;
+		padding: 10px 25px!important;
 	}
 }
